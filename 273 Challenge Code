@@ -1,0 +1,42 @@
+public class Challenge {
+
+  public static void main(String[] args){
+  
+     Scanner input = new Scanner(System.in);
+     String line1 = input.nextLine();
+     String line2 = input.nextLine();
+     String unit1 = "", unit2 = "";
+     double value = 0.0;
+  
+     value = decipherLine(line1, unit1, unit2)
+     System.out.println(conversion(value, unit1, unit2));
+     unit1 = ""; unit2 = "";
+     value = decipherLine(line2, unit1, unit2)
+     System.out.println(conversion(value, unit1, unit2));
+     input.close();
+  }
+
+  public static double decipherLine(String line, String unit1, String unit2){
+  
+     int length = line.length();
+     unit1 = String.valueOf(line.charAt(length-2));
+     unit2 = String.valueOf(line.charAt(length-1));
+     String val = line.subString(0, length-2);
+  
+     return Double.parseDouble(val);
+  }
+
+  public static String conversion(double value, String unit1, String unit2){
+     double pi = Math.PI;
+     double val = 0.0;
+  
+     if(unit1.equals("d")){
+        val = (value) * (pi/180);
+     } else {
+        val = (value) * (180/pi);
+     }
+  
+     return "" + val + unit2;
+  }
+}
+
