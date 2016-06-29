@@ -1,1 +1,1 @@
-Simple program challenge from the subreddit r/DailyProgrammer on Reddit. Challenge #273.
+Program challenges from the subreddit r/DailyProgrammer on Reddit.com. All programs are written in Java.
