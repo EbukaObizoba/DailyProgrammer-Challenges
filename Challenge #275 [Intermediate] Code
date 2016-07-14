@@ -32,7 +32,7 @@ your solution, as a check. */
       HashMap<String, String> elementSyms = new HashMap<String, String>();
       //Arraylist to store each element in given file.
       ArrayList<String> allLines = new ArrayList<String>();
-      Dumps each element into ArrayList
+      //Dumps each element into ArrayList
       readLines(textFile, allLines);
 
       for(String line : allLines){
