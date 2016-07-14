@@ -47,7 +47,7 @@ your solution, as a check. */
 
   public static String findSymbol(String line, HashMap<String, String> map){
       for(int outer = 0; outer < line.length()-1; outer++){
-          for(int inner = 1; inner < line.length(); inner++){
+          for(int inner = outer + 1; inner < line.length(); inner++){
               //Possible symbol for element
               String tempSym = charsToString(line.charAt(outer), line.charAt(inner));
               //Checking for available symbol
@@ -57,7 +57,6 @@ your solution, as a check. */
               }
           }
       }
-
       //Preferred element symbol is not available.
       return null;
   }
