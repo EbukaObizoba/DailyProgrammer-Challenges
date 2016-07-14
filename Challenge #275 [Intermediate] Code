@@ -75,7 +75,7 @@ your solution, as a check. */
           while(text != null){
               lineList.add(text);
               text = buffer.readLine();
-      } catch(Exception e) {
+      } catch(IOException e) {
           e.printStackTrace();
       }
   }
