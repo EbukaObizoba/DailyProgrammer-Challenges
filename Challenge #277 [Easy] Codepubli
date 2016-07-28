@@ -1,0 +1,69 @@
+public class Challenge {
+
+/*CHALLENGE PROMPT [Simplifying Fractions]
+A fraction exists of a numerator (top part) and a denominator (bottom part) as you probably all know.
+Simplifying (or reducing) fractions means to make the fraction as simple as possible. Meaning that the denominator 
+is a close to 1 as possible. This can be done by dividing the numerator and denominator by their greatest common divisor.
+Input Description: You will be given a list with 2 numbers seperator by a space. The first is the numerator, the second the denominator.
+4 8
+1536 78360
+51478 5536
+46410 119340
+7673 4729
+4096 1024
+Output Description: The most simplified numbers
+1 2
+64 3265
+25739 2768
+7 18
+7673 4729
+4 1
+
+  public int[] simpleFraction(int num, int denom){
+      int[] array;
+      if(denom == 0) return null;
+      if(num == 0){
+          array = {0, 1};
+          return array;
+      }
+      //Number divisible by num and denom
+      int div = 0;
+      if(num == denom){
+          array = {1, 1};
+          return array;
+      }
+      array = new int[2];
+      if(num%denom == 0){
+          div = denom;
+          return findFrac(num, denom, div, array);
+      } else if(denom%num == 0){
+          div = num;
+          return findFrac(num, denom, div, array);
+      }
+  
+      div = divisibleBy(num, denom);
+      return findFrac(num, denom, div, array);
+  }
+  
+  public int divisibleBy(int val1, int val2){
+      //Finds the greatest common multiple by using modulus until there is a remainder of zero.
+      if(val2 == 0){
+          return val1;
+      } else {
+          return divisibleBy(val2, val1%val2);
+      }
+  }
+  
+  public int[] findFrac(int num, int denom, int div, int[] array){
+      if(num == 1 || denom == 1){
+          array[0] = num; array[1] = denom;
+          return array;
+      }
+      if((num%div != 0) || (denom%div != 0)){
+          array[0] = num; array[1] = denom;
+          return array;
+      }
+      return findFrac(num/div, denom/div, div, arr);
+  }
+
+}
