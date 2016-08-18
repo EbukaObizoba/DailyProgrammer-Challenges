@@ -25,7 +25,7 @@ public class Challenge273 {
 		} else {
 			val = (value) * (180 / pi);
 		}
-		DecimalFormat format = new DecimalFormat("#.###");
+		DecimalFormat format = new DecimalFormat("#.##");
 		return format.format(val) + finalState;
 	}
 
