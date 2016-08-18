@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Challenge275 {
-	//Easy challenge
+	//Easy challenge 
 	public boolean correctSymbol(String element, String symbol){
 		if(element.length() <= 1 || symbol.length() <= 1) return false;
         String elementLow = element.toLowerCase(), symbolLow = symbol.toLowerCase();
