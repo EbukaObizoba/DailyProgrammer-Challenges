@@ -46,9 +46,9 @@ public class Challenge280 {
 		//Inputing challenge test cases
 		int[][] testCases = { {0,1,1,1,0,1,1,1,0,0},
 		                      {1,0,1,0,0,1,0,0,0,0},
-				              {0,0,1,1,1,0,1,1,1,0},
-				              {0,0,0,0,1,1,0,0,0,0},
-				              {1,1,1,1,1,1,0,0,0,1} };
+				      {0,0,1,1,1,0,1,1,1,0},
+				      {0,0,0,0,1,1,0,0,0,0},
+				      {1,1,1,1,1,1,0,0,0,1} };
 		for(int num = 0; num < testCases.length; num++){
 			System.out.println("The output of your entry is " + challenge.validCounting(testCases[num]));
 		}
