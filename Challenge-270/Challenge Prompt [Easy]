@@ -1,0 +1,30 @@
+CHALLENGE PROMPT [Transpose the input text]
+
+Write a program that takes input text from standard input and outputs the text -- transposed.
+Roughly explained, the transpose of a matrix
+
+A B C
+D E F
+
+is given by
+
+A D
+B E
+C F
+
+Input Description: 
+One or more lines of text. Since the transpose is only valid for square matrices, append spaces to the shorter lines 
+until they are of the same length. Characters may be multibyte (UTF-8) characters.
+
+Some
+text.
+
+Output description:
+The input text should be treated as a matrix of characters and flipped around the diagonal. 
+I.e., the top right input character becomes the bottom left character of the output.
+
+St
+oe
+mx
+et
+ .
