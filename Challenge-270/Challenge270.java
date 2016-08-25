@@ -98,10 +98,11 @@ public class Challenge270 {
 	
 	private char[][][] testCases(){
 		char[][][] testCases = {
+			        //Case 1
 				{ {'S', 'o','m','e'},
-			      {'t', 'e', 'x', 't', '.'} 
+			          {'t', 'e', 'x', 't', '.'} 
 				},
-				
+				//Case 2
 				{ {'p','a','c', 'k','a','g','e',' ', 'm', 'a','i','n'},
 				  {' '},
 				  {'i', 'm','p','o','r','t',' ','"','f','m','t','"'},
@@ -126,12 +127,14 @@ public class Challenge270 {
 		char[][][] testCases = testCases();
 		char[][] case1 = testCases[0];
 		char[][] case2 = testCases[1];
+		//Processing first case...
 		System.out.println("Original input for case1:");
 		printArray(case1); 
 		char[][] transposedArray = transposeArray(equalLengthRows(case1));
 		System.out.println("Transposed input for case1:");
 		printArray(transposedArray);
 		System.out.println();
+		//Processing second case...
 		System.out.println("Original input for case2:");
 		printArray(case2); 
 		transposedArray = transposeArray(equalLengthRows(case2));
