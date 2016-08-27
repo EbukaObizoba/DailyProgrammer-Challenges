@@ -68,7 +68,7 @@ public class Challenge272 {
 	
 	public static void main(String[] args){
 		String[] tilesToBeRemoved = { "PQAREIOURSTHGWIOAE_", "LQTOONOEFFJZT", "AXHDRUIOR_XHJZUQEE" };
-		//Simulating three games where tiles are removed from the bag.
+		//Simulating three games where tiles are removed from three different bags.
 		Challenge272 gameOne = new Challenge272();
 		Challenge272 gameTwo = new Challenge272();
 		Challenge272 gameThree = new Challenge272();
